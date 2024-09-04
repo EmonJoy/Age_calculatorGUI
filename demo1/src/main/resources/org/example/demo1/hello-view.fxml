@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="731.0" prefWidth="600.0" style="-fx-background-color: #CD5C5C;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.demo1.HelloController">
+   <children>
+      <Label alignment="CENTER" layoutX="160.0" layoutY="52.0" prefHeight="18.0" prefWidth="374.0" text="Age Calculator">
+         <font>
+            <Font name="Franklin Gothic Demi Cond" size="52.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.4026549178942115" centerY="0.5606060750556715" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.11707602441310883" green="0.3482261300086975" blue="0.8105263113975525" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label layoutY="155.0" prefHeight="36.0" prefWidth="129.0" text="Brith year :">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="text1" layoutX="182.0" layoutY="152.0" prefHeight="42.0" prefWidth="235.0" promptText="ex: 2004" />
+      <Button fx:id="btn" layoutX="109.0" layoutY="381.0" mnemonicParsing="false" onAction="#Mybtn" prefHeight="42.0" prefWidth="122.0" style="-fx-background-color: #7fffd4;" text="Calculate">
+         <font>
+            <Font name="Lucida Fax Demibold" size="17.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtResult" alignment="CENTER" layoutX="11.0" layoutY="471.0" prefHeight="187.0" prefWidth="574.0" promptText="Result" style="-fx-background-color: white;">
+         <font>
+            <Font name="Marlett" size="33.0" />
+         </font>
+      </TextField>
+      <Label layoutY="233.0" prefHeight="36.0" prefWidth="170.0" text="Brith Month :">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutY="313.0" prefHeight="36.0" prefWidth="170.0" text="Brith Date :">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtMonth" layoutX="182.0" layoutY="230.0" prefHeight="42.0" prefWidth="235.0" promptText="ex: 02" />
+      <TextField fx:id="txtDate" layoutX="182.0" layoutY="310.0" prefHeight="42.0" prefWidth="235.0" promptText="ex: 14" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="10.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" style="-fx-smooth: -webkit-optimize-contrast;">
+         <image>
+            <Image url="@../../../../../../age_calc.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="51.0" layoutY="682.0" text="CODE by: MR Morningstar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn1" layoutX="313.0" layoutY="381.0" mnemonicParsing="false" onAction="#ClearBtn" prefHeight="42.0" prefWidth="122.0" style="-fx-background-color: #ffefd5;" text="Clear">
+         <font>
+            <Font name="Lucida Fax Demibold" size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
